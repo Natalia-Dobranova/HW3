@@ -1,4 +1,5 @@
-﻿namespace Homework3
+using System;
+namespace Homework3
 {
     internal class Tree
     {
@@ -6,7 +7,7 @@
         private string _type;
         private string _name;
         private int _age;
-       
+
         public Tree(int age)
         {
             _type = "";
@@ -21,7 +22,7 @@
             _age = age;
         }
 
-        public void Print ()
+        public void Print()
         {
             Console.WriteLine($"There is a {_age}-year-old {_type} {_name} in my garden");
         }
