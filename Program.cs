@@ -1,16 +1,17 @@
-﻿using System;
+using System;
 
 
 namespace Homework3
 {
-		internal class Program {
+    internal class Program
+    {
 
-        static void Main (string [] args)
+        static void Main(string[] args)
         {
             // Task1 
             Console.WriteLine("Task 1: ");
 
-            string[] array = { "", "sweet", "dream", "cute", "cats", "dogs", "mice", "elephants"};
+            string[] array = { "", "sweet", "dream", "cute", "cats", "dogs", "mice", "elephants" };
 
             foreach (string arg in array)
             {
@@ -22,14 +23,10 @@ namespace Homework3
             // Task2
             Console.WriteLine("Task 2: ");
 
-            Shape circle = new Circle(12.3);
-            circle.Area();
-
-            Shape triangle = new Triangle(12, 4);
-            triangle.Area();
-
-            Shape trapezoid = new Trapezoid(12, 10, 5);
-            trapezoid.Area();
+            Shape obj = new Shape();
+            obj.Area(12);
+            obj.Area(5.5, 7);
+            obj.Area(12,5,3.5);
 
             // Task3
             Console.WriteLine("Task 3: ");
@@ -41,10 +38,10 @@ namespace Homework3
 
 
 
-        
+
         }
 
-}
+    }
 }
 
 
